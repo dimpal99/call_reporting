@@ -1,0 +1,39 @@
+ERROR - 2026-02-20 10:55:14 --> Fetch Error: Undefined property: stdClass::$callId
+ERROR - 2026-02-20 10:58:48 --> Fetch Error: Undefined property: stdClass::$callId
+ERROR - 2026-02-20 11:05:42 --> Fetch Error: Undefined property: stdClass::$callId
+ERROR - 2026-02-20 11:06:17 --> Fetch Error: Undefined property: stdClass::$callId
+ERROR - 2026-02-20 11:07:41 --> Fetch Error: Undefined property: stdClass::$callId
+ERROR - 2026-02-20 11:08:06 --> Fetch Error: Undefined property: stdClass::$callId
+ERROR - 2026-02-20 11:09:53 --> Fetch Error: Undefined property: stdClass::$callId
+ERROR - 2026-02-20 11:10:50 --> Fetch Error: Undefined property: stdClass::$callId
+CRITICAL - 2026-02-20 11:13:07 --> Error: Call to a member function getBody() on string
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 218.
+ 1 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-02-20 11:15:46 --> Fetch Error: Undefined property: stdClass::$callId
+ERROR - 2026-02-20 11:28:30 --> Fetch Error: Undefined property: stdClass::$callId
+ERROR - 2026-02-20 11:31:07 --> Fetch Error: Undefined variable $audioUrl
+ERROR - 2026-02-20 11:31:21 --> Fetch Error: Undefined variable $audioUrl
+CRITICAL - 2026-02-20 12:57:20 --> Error: Object of class GuzzleHttp\Psr7\Response could not be converted to string
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 251.
+ 1 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-02-20 13:12:04 --> Fetch Error: Undefined array key "topic"
+ERROR - 2026-02-20 13:15:00 --> Fetch Error: Undefined array key "topic"
+ERROR - 2026-02-20 13:18:23 --> Fetch Error: Undefined array key "topic"
+ERROR - 2026-02-20 13:20:11 --> Fetch Error: Array to string conversion
+ERROR - 2026-02-20 13:21:51 --> Fetch Error: Array to string conversion
+ERROR - 2026-02-20 13:22:37 --> Fetch Error: Array to string conversion
+ERROR - 2026-02-20 13:22:57 --> Fetch Error: Array to string conversion
+ERROR - 2026-02-20 13:23:25 --> Fetch Error: Array to string conversion
+ERROR - 2026-02-20 13:33:06 --> Fetch Error: Array to string conversion

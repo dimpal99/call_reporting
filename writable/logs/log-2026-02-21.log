@@ -1,0 +1,226 @@
+ERROR - 2026-02-21 05:41:44 --> Fetch Error: Array to string conversion
+ERROR - 2026-02-21 05:52:38 --> Fetch Error: Array to string conversion
+ERROR - 2026-02-21 05:57:42 --> Fetch Error: Array to string conversion
+ERROR - 2026-02-21 05:58:35 --> Fetch Error: Array to string conversion
+CRITICAL - 2026-02-21 06:16:53 --> Error: Class "App\Controllers\IntegrationSettingsModel" not found
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\CallReport->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-02-21 06:20:56 --> Fetch Error: Undefined variable $reportStart
+CRITICAL - 2026-02-21 06:21:16 --> ErrorException: Undefined variable $settingsModel
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 38.
+ 1 APPPATH\Controllers\CallReport.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $settingsModel', 'C:\\xampp\\htdocs\\call_reporting\\app\\Controllers\\CallReport.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-02-21 06:31:35 --> Fetch Error: Undefined property: stdClass::$hasConnected
+ERROR - 2026-02-21 06:32:09 --> Fetch Error: Undefined property: stdClass::$hasConnected
+ERROR - 2026-02-21 06:32:19 --> Fetch Error: Undefined property: stdClass::$hasConnected
+ERROR - 2026-02-21 06:41:07 --> Fetch Error: Undefined variable $duration
+ERROR - 2026-02-21 06:41:19 --> Fetch Error: Undefined variable $duration
+ERROR - 2026-02-21 06:48:34 --> Fetch Error: Call to undefined method App\Models\RingbaCallModel::updateLastFetchTime
+ERROR - 2026-02-21 06:49:07 --> Duplicate entry '1771602774888' for key 'call_id'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `ringba_calls` (`call_id`, `timestamp`, `campaign_id`, `campaign_name`, `payout`, `tier`, `duration`, `has_recording`, `sentiment`, `summary`, `transcript_url`, `raw_json`) VALUES (1771602774888, \'2026-02-21 06:49:07\', \'CA8278ed3f26e9495b881fe3833174d007\', \'Roofing Contractors\', 0, 3, 0, 0, \'Neutral\', \'\', \'\', \'{\\"campaignName\\":\\"Roofing Contractors\\",\\"campaignId\\":\\"CA8278ed3f26e9495b881fe3833174d007\\",\\"inboundCallId\\":\\"RGB94E58427D894AEF9F43E30DD37879B6EBAB25DD3V3XDW01\\",\\"callDt\\":1771602774888,\\"inboundPhoneNumber\\":\\"+16077352563\\",\\"number\\":\\"+16075759189\\",\\"numberPoolId\\":\\"\\",\\"numberPoolName\\":\\"\\",\\"timeToCallInSeconds\\":0,\\"callLengthInSeconds\\":27,\\"isDuplicate\\":false,\\"hasPreviouslyConnected\\":false,\\"isIncomplete\\":true,\\"isLive\\":false,\\"timeToConnectInSeconds\\":27}\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ringba_calls` (`call_id`, `timestamp`, `campaign_id`, `campaign_name`, `payout`, `tier`, `duration`, `has_recording`, `sentiment`, `summary`, `transcript_url`, `raw_json`) VALUES (1771602774888, \'2026-02-21 06:49:07\', \'CA8278ed3f26e9495b881fe3833174d007\', \'Roofing Contractors\', 0, 3, 0, 0, \'Neutral\', \'\', \'\', \'{\\"campaignName\\":\\"Roofing Contractors\\",\\"campaignId\\":\\"CA8278ed3f26e9495b881fe3833174d007\\",\\"inboundCallId\\":\\"RGB94E58427D894AEF9F43E30DD37879B6EBAB25DD3V3XDW01\\",\\"callDt\\":1771602774888,\\"inboundPhoneNumber\\":\\"+16077352563\\",\\"number\\":\\"+16075759189\\",\\"numberPoolId\\":\\"\\",\\"numberPoolName\\":\\"\\",\\"timeToCallInSeconds\\":0,\\"callLengthInSeconds\\":27,\\"isDuplicate\\":false,\\"hasPreviouslyConnected\\":false,\\"isIncomplete\\":true,\\"isLive\\":false,\\"timeToConnectInSeconds\\":27}\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ringba_calls` (`call_id`, `timestamp`, `campaign_id`, `campaign_name`, `payout`, `tier`, `duration`, `has_recording`, `sentiment`, `summary`, `transcript_url`, `raw_json`) VALUES (1771602774888, \'2026-02-21 06:49:07\', \'CA8278ed3f26e9495b881fe3833174d007\', \'Roofing Contractors\', 0, 3, 0, 0, \'Neutral\', \'\', \'\', \'{\\"campaignName\\":\\"Roofing Contractors\\",\\"campaignId\\":\\"CA8278ed3f26e9495b881fe3833174d007\\",\\"inboundCallId\\":\\"RGB94E58427D894AEF9F43E30DD37879B6EBAB25DD3V3XDW01\\",\\"callDt\\":1771602774888,\\"inboundPhoneNumber\\":\\"+16077352563\\",\\"number\\":\\"+16075759189\\",\\"numberPoolId\\":\\"\\",\\"numberPoolName\\":\\"\\",\\"timeToCallInSeconds\\":0,\\"callLengthInSeconds\\":27,\\"isDuplicate\\":false,\\"hasPreviouslyConnected\\":false,\\"isIncomplete\\":true,\\"isLive\\":false,\\"timeToConnectInSeconds\\":27}\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ringba_calls` (`call_id`, `timestamp`, `campaign_id`, `campaign_name`, `payout`, `tier`, `duration`, `has_recording`, `sentiment`, `summary`, `transcript_url`, `raw_json`) VALUES (:call_id:, :timestamp:, :campaign_id:, :campaign_name:, :payout:, :tier:, :duration:, :has_recording:, :sentiment:, :summary:, :transcript_url:, :raw_json:)', [...], false)
+ 5 SYSTEMPATH\Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(665): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\CallReport.php(232): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-02-21 06:49:07 --> Fetch Error: Duplicate entry '1771602774888' for key 'call_id'
+ERROR - 2026-02-21 06:49:36 --> Duplicate entry '1771602774888' for key 'call_id'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `ringba_calls` (`call_id`, `timestamp`, `campaign_id`, `campaign_name`, `payout`, `tier`, `duration`, `has_recording`, `sentiment`, `summary`, `transcript_url`, `raw_json`) VALUES (1771602774888, \'2026-02-21 06:49:36\', \'CA8278ed3f26e9495b881fe3833174d007\', \'Roofing Contractors\', 0, 3, 0, 0, \'Neutral\', \'\', \'\', \'{\\"campaignName\\":\\"Roofing Contractors\\",\\"campaignId\\":\\"CA8278ed3f26e9495b881fe3833174d007\\",\\"inboundCallId\\":\\"RGB94E58427D894AEF9F43E30DD37879B6EBAB25DD3V3XDW01\\",\\"callDt\\":1771602774888,\\"inboundPhoneNumber\\":\\"+16077352563\\",\\"number\\":\\"+16075759189\\",\\"numberPoolId\\":\\"\\",\\"numberPoolName\\":\\"\\",\\"timeToCallInSeconds\\":0,\\"callLengthInSeconds\\":27,\\"isDuplicate\\":false,\\"hasPreviouslyConnected\\":false,\\"isIncomplete\\":true,\\"isLive\\":false,\\"timeToConnectInSeconds\\":27}\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ringba_calls` (`call_id`, `timestamp`, `campaign_id`, `campaign_name`, `payout`, `tier`, `duration`, `has_recording`, `sentiment`, `summary`, `transcript_url`, `raw_json`) VALUES (1771602774888, \'2026-02-21 06:49:36\', \'CA8278ed3f26e9495b881fe3833174d007\', \'Roofing Contractors\', 0, 3, 0, 0, \'Neutral\', \'\', \'\', \'{\\"campaignName\\":\\"Roofing Contractors\\",\\"campaignId\\":\\"CA8278ed3f26e9495b881fe3833174d007\\",\\"inboundCallId\\":\\"RGB94E58427D894AEF9F43E30DD37879B6EBAB25DD3V3XDW01\\",\\"callDt\\":1771602774888,\\"inboundPhoneNumber\\":\\"+16077352563\\",\\"number\\":\\"+16075759189\\",\\"numberPoolId\\":\\"\\",\\"numberPoolName\\":\\"\\",\\"timeToCallInSeconds\\":0,\\"callLengthInSeconds\\":27,\\"isDuplicate\\":false,\\"hasPreviouslyConnected\\":false,\\"isIncomplete\\":true,\\"isLive\\":false,\\"timeToConnectInSeconds\\":27}\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ringba_calls` (`call_id`, `timestamp`, `campaign_id`, `campaign_name`, `payout`, `tier`, `duration`, `has_recording`, `sentiment`, `summary`, `transcript_url`, `raw_json`) VALUES (1771602774888, \'2026-02-21 06:49:36\', \'CA8278ed3f26e9495b881fe3833174d007\', \'Roofing Contractors\', 0, 3, 0, 0, \'Neutral\', \'\', \'\', \'{\\"campaignName\\":\\"Roofing Contractors\\",\\"campaignId\\":\\"CA8278ed3f26e9495b881fe3833174d007\\",\\"inboundCallId\\":\\"RGB94E58427D894AEF9F43E30DD37879B6EBAB25DD3V3XDW01\\",\\"callDt\\":1771602774888,\\"inboundPhoneNumber\\":\\"+16077352563\\",\\"number\\":\\"+16075759189\\",\\"numberPoolId\\":\\"\\",\\"numberPoolName\\":\\"\\",\\"timeToCallInSeconds\\":0,\\"callLengthInSeconds\\":27,\\"isDuplicate\\":false,\\"hasPreviouslyConnected\\":false,\\"isIncomplete\\":true,\\"isLive\\":false,\\"timeToConnectInSeconds\\":27}\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ringba_calls` (`call_id`, `timestamp`, `campaign_id`, `campaign_name`, `payout`, `tier`, `duration`, `has_recording`, `sentiment`, `summary`, `transcript_url`, `raw_json`) VALUES (:call_id:, :timestamp:, :campaign_id:, :campaign_name:, :payout:, :tier:, :duration:, :has_recording:, :sentiment:, :summary:, :transcript_url:, :raw_json:)', [...], false)
+ 5 SYSTEMPATH\Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(665): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\CallReport.php(232): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-02-21 06:49:36 --> Fetch Error: Duplicate entry '1771602774888' for key 'call_id'
+ERROR - 2026-02-21 06:59:54 --> Fetch Error: file "credentials.json" does not exist
+ERROR - 2026-02-21 07:04:09 --> Fetch Error: file "credentials.json" does not exist
+ERROR - 2026-02-21 07:09:34 --> Fetch Error: file "credentials.json" does not exist
+ERROR - 2026-02-21 07:11:27 --> Fetch Error: file "credentials.json" does not exist
+ERROR - 2026-02-21 07:13:02 --> Fetch Error: file "credentials.json" does not exist
+ERROR - 2026-02-21 07:14:14 --> Fetch Error: file "credentials.json" does not exist
+ERROR - 2026-02-21 07:15:00 --> Fetch Error: file "credentials.json" does not exist
+ERROR - 2026-02-21 07:15:27 --> Fetch Error: file "credentials.json" does not exist
+CRITICAL - 2026-02-21 07:17:23 --> Error: Class "App\Controllers\Google_Client" not found
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 238.
+ 1 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-21 07:19:26 --> Error: Class "App\Controllers\Google_Client" not found
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 239.
+ 1 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-02-21 07:21:13 --> Fetch Error: file "C:\xampp\htdocs\call_reporting\app\credentials.json" does not exist
+ERROR - 2026-02-21 07:30:21 --> Fetch Error: file "credentials.json" does not exist
+ERROR - 2026-02-21 07:32:54 --> Fetch Error: file "credentials.json" does not exist
+ERROR - 2026-02-21 07:54:50 --> Fetch Error: Undefined variable $client
+ERROR - 2026-02-21 07:56:55 --> Fetch Error: {
+  "error": {
+    "code": 403,
+    "message": "Google Sheets API has not been used in project 1000672545244 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/sheets.googleapis.com/overview?project=1000672545244 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.",
+    "errors": [
+      {
+        "message": "Google Sheets API has not been used in project 1000672545244 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/sheets.googleapis.com/overview?project=1000672545244 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.",
+        "domain": "usageLimits",
+        "reason": "accessNotConfigured",
+        "extendedHelp": "https://console.developers.google.com"
+      }
+    ],
+    "status": "PERMISSION_DENIED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "SERVICE_DISABLED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "containerInfo": "1000672545244",
+          "service": "sheets.googleapis.com",
+          "consumer": "projects/1000672545244",
+          "activationUrl": "https://console.developers.google.com/apis/api/sheets.googleapis.com/overview?project=1000672545244",
+          "serviceTitle": "Google Sheets API"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+        "locale": "en-US",
+        "message": "Google Sheets API has not been used in project 1000672545244 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/sheets.googleapis.com/overview?project=1000672545244 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry."
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Google developers console API activation",
+            "url": "https://console.developers.google.com/apis/api/sheets.googleapis.com/overview?project=1000672545244"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+ERROR - 2026-02-21 08:01:52 --> Fetch Error: {
+  "error": {
+    "code": 403,
+    "message": "Google Sheets API has not been used in project 1000672545244 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/sheets.googleapis.com/overview?project=1000672545244 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.",
+    "errors": [
+      {
+        "message": "Google Sheets API has not been used in project 1000672545244 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/sheets.googleapis.com/overview?project=1000672545244 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.",
+        "domain": "usageLimits",
+        "reason": "accessNotConfigured",
+        "extendedHelp": "https://console.developers.google.com"
+      }
+    ],
+    "status": "PERMISSION_DENIED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "SERVICE_DISABLED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "serviceTitle": "Google Sheets API",
+          "activationUrl": "https://console.developers.google.com/apis/api/sheets.googleapis.com/overview?project=1000672545244",
+          "consumer": "projects/1000672545244",
+          "service": "sheets.googleapis.com",
+          "containerInfo": "1000672545244"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+        "locale": "en-US",
+        "message": "Google Sheets API has not been used in project 1000672545244 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/sheets.googleapis.com/overview?project=1000672545244 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry."
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Google developers console API activation",
+            "url": "https://console.developers.google.com/apis/api/sheets.googleapis.com/overview?project=1000672545244"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+ERROR - 2026-02-21 08:04:02 --> Fetch Error: {
+  "error": {
+    "code": 403,
+    "message": "Google Sheets API has not been used in project 1000672545244 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/sheets.googleapis.com/overview?project=1000672545244 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.",
+    "errors": [
+      {
+        "message": "Google Sheets API has not been used in project 1000672545244 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/sheets.googleapis.com/overview?project=1000672545244 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.",
+        "domain": "usageLimits",
+        "reason": "accessNotConfigured",
+        "extendedHelp": "https://console.developers.google.com"
+      }
+    ],
+    "status": "PERMISSION_DENIED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "SERVICE_DISABLED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "sheets.googleapis.com",
+          "containerInfo": "1000672545244",
+          "consumer": "projects/1000672545244",
+          "serviceTitle": "Google Sheets API",
+          "activationUrl": "https://console.developers.google.com/apis/api/sheets.googleapis.com/overview?project=1000672545244"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+        "locale": "en-US",
+        "message": "Google Sheets API has not been used in project 1000672545244 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/sheets.googleapis.com/overview?project=1000672545244 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry."
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Google developers console API activation",
+            "url": "https://console.developers.google.com/apis/api/sheets.googleapis.com/overview?project=1000672545244"
+          }
+        ]
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,6 @@
+/writable/*
+/vendor/*
+.env
+*.log
+.idea/
+*.swp

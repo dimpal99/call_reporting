@@ -1,0 +1,493 @@
+CRITICAL - 2026-02-19 07:34:23 --> ErrorException: Attempt to read property "data" on array
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 73.
+ 1 APPPATH\Controllers\CallReport.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "data" on array', 'C:\\xampp\\htdocs\\call_reporting\\app\\Controllers\\CallReport.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 07:35:34 --> ErrorException: Attempt to read property "data" on array
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 75.
+ 1 APPPATH\Controllers\CallReport.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "data" on array', 'C:\\xampp\\htdocs\\call_reporting\\app\\Controllers\\CallReport.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 07:48:54 --> GuzzleHttp\Exception\ClientException: Client error: `GET https://api.ringba.com/v2/accounts` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The resource cannot be found.</title>
+        <meta name="viewport" (truncated...)
+
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in VENDORPATH\guzzlehttp\guzzle\src\Exception\RequestException.php on line 111.
+ 1 VENDORPATH\guzzlehttp\guzzle\src\Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), null, [], null)
+ 2 VENDORPATH\guzzlehttp\promises\src\Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+ 3 VENDORPATH\guzzlehttp\promises\src\Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), null)
+ 4 VENDORPATH\guzzlehttp\promises\src\TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+ 5 VENDORPATH\guzzlehttp\promises\src\Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+ 6 VENDORPATH\guzzlehttp\promises\src\Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+ 7 VENDORPATH\guzzlehttp\promises\src\Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+ 8 VENDORPATH\guzzlehttp\promises\src\Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+ 9 VENDORPATH\guzzlehttp\promises\src\Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+10 VENDORPATH\guzzlehttp\guzzle\src\Client.php(189): GuzzleHttp\Promise\Promise->wait()
+11 VENDORPATH\guzzlehttp\guzzle\src\ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://api.ringba.com/v2/accounts', [...])
+12 APPPATH\Controllers\CallReport.php(27): GuzzleHttp\Client->get('https://api.ringba.com/v2/accounts', [...])
+13 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+15 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 08:36:36 --> GuzzleHttp\Exception\ClientException: Client error: `GET https://api.ringba.com/v2/accounts` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The resource cannot be found.</title>
+        <meta name="viewport" (truncated...)
+
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in VENDORPATH\guzzlehttp\guzzle\src\Exception\RequestException.php on line 111.
+ 1 VENDORPATH\guzzlehttp\guzzle\src\Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), null, [], null)
+ 2 VENDORPATH\guzzlehttp\promises\src\Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+ 3 VENDORPATH\guzzlehttp\promises\src\Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), null)
+ 4 VENDORPATH\guzzlehttp\promises\src\TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+ 5 VENDORPATH\guzzlehttp\promises\src\Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+ 6 VENDORPATH\guzzlehttp\promises\src\Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+ 7 VENDORPATH\guzzlehttp\promises\src\Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+ 8 VENDORPATH\guzzlehttp\promises\src\Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+ 9 VENDORPATH\guzzlehttp\promises\src\Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+10 VENDORPATH\guzzlehttp\guzzle\src\Client.php(189): GuzzleHttp\Promise\Promise->wait()
+11 VENDORPATH\guzzlehttp\guzzle\src\ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://api.ringba.com/v2/accounts', [...])
+12 APPPATH\Controllers\CallReport.php(27): GuzzleHttp\Client->get('https://api.ringba.com/v2/accounts', [...])
+13 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+15 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 08:56:15 --> GuzzleHttp\Exception\ClientException: Client error: `GET https://api.ringba.com/v2/accounts` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The resource cannot be found.</title>
+        <meta name="viewport" (truncated...)
+
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in VENDORPATH\guzzlehttp\guzzle\src\Exception\RequestException.php on line 111.
+ 1 VENDORPATH\guzzlehttp\guzzle\src\Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), null, [], null)
+ 2 VENDORPATH\guzzlehttp\promises\src\Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+ 3 VENDORPATH\guzzlehttp\promises\src\Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), null)
+ 4 VENDORPATH\guzzlehttp\promises\src\TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+ 5 VENDORPATH\guzzlehttp\promises\src\Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+ 6 VENDORPATH\guzzlehttp\promises\src\Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+ 7 VENDORPATH\guzzlehttp\promises\src\Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+ 8 VENDORPATH\guzzlehttp\promises\src\Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+ 9 VENDORPATH\guzzlehttp\promises\src\Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+10 VENDORPATH\guzzlehttp\guzzle\src\Client.php(189): GuzzleHttp\Promise\Promise->wait()
+11 VENDORPATH\guzzlehttp\guzzle\src\ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://api.ringba.com/v2/accounts', [...])
+12 APPPATH\Controllers\CallReport.php(27): GuzzleHttp\Client->get('https://api.ringba.com/v2/accounts', [...])
+13 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+15 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 08:57:24 --> GuzzleHttp\Exception\ClientException: Client error: `GET https://api.ringba.com/v2/%7B%7BaccountId%7D%7D/addresses/%7B%7BaddressId%7D%7D` resulted in a `403 Forbidden` response
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in VENDORPATH\guzzlehttp\guzzle\src\Exception\RequestException.php on line 111.
+ 1 VENDORPATH\guzzlehttp\guzzle\src\Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), null, [], null)
+ 2 VENDORPATH\guzzlehttp\promises\src\Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+ 3 VENDORPATH\guzzlehttp\promises\src\Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), null)
+ 4 VENDORPATH\guzzlehttp\promises\src\TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+ 5 VENDORPATH\guzzlehttp\promises\src\Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+ 6 VENDORPATH\guzzlehttp\promises\src\Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+ 7 VENDORPATH\guzzlehttp\promises\src\Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+ 8 VENDORPATH\guzzlehttp\promises\src\Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+ 9 VENDORPATH\guzzlehttp\promises\src\Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+10 VENDORPATH\guzzlehttp\guzzle\src\Client.php(189): GuzzleHttp\Promise\Promise->wait()
+11 VENDORPATH\guzzlehttp\guzzle\src\ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://api.ringba.com/v2/{{accountId}}/addresses/{{addressId}}', [...])
+12 APPPATH\Controllers\CallReport.php(27): GuzzleHttp\Client->get('https://api.ringba.com/v2/{{accountId}}/addresses/{{addressId}}', [...])
+13 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+15 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 08:58:00 --> GuzzleHttp\Exception\ClientException: Client error: `GET https://api.ringba.com/v2/%7B%7BaccountId%7D%7D/addresses/%7B%7BaddressId%7D%7D` resulted in a `403 Forbidden` response
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in VENDORPATH\guzzlehttp\guzzle\src\Exception\RequestException.php on line 111.
+ 1 VENDORPATH\guzzlehttp\guzzle\src\Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), null, [], null)
+ 2 VENDORPATH\guzzlehttp\promises\src\Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+ 3 VENDORPATH\guzzlehttp\promises\src\Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), null)
+ 4 VENDORPATH\guzzlehttp\promises\src\TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+ 5 VENDORPATH\guzzlehttp\promises\src\Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+ 6 VENDORPATH\guzzlehttp\promises\src\Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+ 7 VENDORPATH\guzzlehttp\promises\src\Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+ 8 VENDORPATH\guzzlehttp\promises\src\Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+ 9 VENDORPATH\guzzlehttp\promises\src\Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+10 VENDORPATH\guzzlehttp\guzzle\src\Client.php(189): GuzzleHttp\Promise\Promise->wait()
+11 VENDORPATH\guzzlehttp\guzzle\src\ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://api.ringba.com/v2/{{accountId}}/addresses/{{addressId}}', [...])
+12 APPPATH\Controllers\CallReport.php(27): GuzzleHttp\Client->get('https://api.ringba.com/v2/{{accountId}}/addresses/{{addressId}}', [...])
+13 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+15 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 08:59:11 --> GuzzleHttp\Exception\ClientException: Client error: `GET https://api.ringba.com/v2/%7B%7BaccountId%7D%7D/addresses` resulted in a `403 Forbidden` response
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in VENDORPATH\guzzlehttp\guzzle\src\Exception\RequestException.php on line 111.
+ 1 VENDORPATH\guzzlehttp\guzzle\src\Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), null, [], null)
+ 2 VENDORPATH\guzzlehttp\promises\src\Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+ 3 VENDORPATH\guzzlehttp\promises\src\Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), null)
+ 4 VENDORPATH\guzzlehttp\promises\src\TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+ 5 VENDORPATH\guzzlehttp\promises\src\Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+ 6 VENDORPATH\guzzlehttp\promises\src\Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+ 7 VENDORPATH\guzzlehttp\promises\src\Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+ 8 VENDORPATH\guzzlehttp\promises\src\Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+ 9 VENDORPATH\guzzlehttp\promises\src\Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+10 VENDORPATH\guzzlehttp\guzzle\src\Client.php(189): GuzzleHttp\Promise\Promise->wait()
+11 VENDORPATH\guzzlehttp\guzzle\src\ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://api.ringba.com/v2/{{accountId}}/addresses', [...])
+12 APPPATH\Controllers\CallReport.php(27): GuzzleHttp\Client->get('https://api.ringba.com/v2/{{accountId}}/addresses', [...])
+13 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+15 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 09:17:39 --> ErrorException: Attempt to read property "data" on array
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 109.
+ 1 APPPATH\Controllers\CallReport.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "data" on array', 'C:\\xampp\\htdocs\\call_reporting\\app\\Controllers\\CallReport.php', 109)
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 09:18:24 --> ErrorException: Undefined variable $calls
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 109.
+ 1 APPPATH\Controllers\CallReport.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $calls', 'C:\\xampp\\htdocs\\call_reporting\\app\\Controllers\\CallReport.php', 109)
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 09:35:52 --> ParseError: syntax error, unexpected variable "$client"
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 57.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\call_reporting\\app\\Controllers\\CallReport.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CallReport')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CallReport')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\CallReport')
+ 5 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('callreport/fetchRingbaCalls')
+ 7 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 09:45:24 --> ParseError: syntax error, unexpected variable "$client"
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 57.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\call_reporting\\app\\Controllers\\CallReport.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CallReport')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CallReport')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\CallReport')
+ 5 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('callreport/fetchRingbaCalls')
+ 7 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 09:46:26 --> ParseError: syntax error, unexpected variable "$client"
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 57.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\call_reporting\\app\\Controllers\\CallReport.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CallReport')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CallReport')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\CallReport')
+ 5 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('callreport/fetchRingbaCalls')
+ 7 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 09:46:50 --> ParseError: syntax error, unexpected variable "$client"
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 57.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\call_reporting\\app\\Controllers\\CallReport.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CallReport')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CallReport')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\CallReport')
+ 5 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('callreport/fetchRingbaCalls')
+ 7 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 09:47:07 --> ParseError: syntax error, unexpected variable "$client"
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 58.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\call_reporting\\app\\Controllers\\CallReport.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CallReport')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CallReport')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\CallReport')
+ 5 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('callreport/fetchRingbaCalls')
+ 7 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 09:47:11 --> ParseError: syntax error, unexpected variable "$client"
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 58.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\call_reporting\\app\\Controllers\\CallReport.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CallReport')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CallReport')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\CallReport')
+ 5 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('callreport/fetchRingbaCalls')
+ 7 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 09:49:49 --> GuzzleHttp\Exception\ClientException: Client error: `GET https://api.ringba.com/v2/RAaf74a45d14124eecb6fbbe591191c6e6/calllogs/columns` resulted in a `401 Unauthorized` response:
+{"message":"Authorization has been denied for this request."}
+
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in VENDORPATH\guzzlehttp\guzzle\src\Exception\RequestException.php on line 111.
+ 1 VENDORPATH\guzzlehttp\guzzle\src\Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), null, [], null)
+ 2 VENDORPATH\guzzlehttp\promises\src\Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+ 3 VENDORPATH\guzzlehttp\promises\src\Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), null)
+ 4 VENDORPATH\guzzlehttp\promises\src\TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+ 5 VENDORPATH\guzzlehttp\promises\src\Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+ 6 VENDORPATH\guzzlehttp\promises\src\Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+ 7 VENDORPATH\guzzlehttp\promises\src\Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+ 8 VENDORPATH\guzzlehttp\promises\src\Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+ 9 VENDORPATH\guzzlehttp\promises\src\Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+10 VENDORPATH\guzzlehttp\guzzle\src\Client.php(189): GuzzleHttp\Promise\Promise->wait()
+11 VENDORPATH\guzzlehttp\guzzle\src\ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://api.ringba.com/v2/RAaf74a45d14124eecb6fbbe591191c6e6/calllogs/columns', [...])
+12 APPPATH\Controllers\CallReport.php(39): GuzzleHttp\Client->get('https://api.ringba.com/v2/RAaf74a45d14124eecb6fbbe591191c6e6/calllogs/columns', [...])
+13 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+15 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 09:56:31 --> GuzzleHttp\Exception\ClientException: Client error: `GET https://api.ringba.com/v2/RAaf74a45d14124eecb6fbbe591191c6e6/calllogs` resulted in a `405 Method Not Allowed` response:
+{"message":"The requested resource does not support http method 'GET'."}
+
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in VENDORPATH\guzzlehttp\guzzle\src\Exception\RequestException.php on line 111.
+ 1 VENDORPATH\guzzlehttp\guzzle\src\Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), null, [], null)
+ 2 VENDORPATH\guzzlehttp\promises\src\Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+ 3 VENDORPATH\guzzlehttp\promises\src\Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), null)
+ 4 VENDORPATH\guzzlehttp\promises\src\TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+ 5 VENDORPATH\guzzlehttp\promises\src\Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+ 6 VENDORPATH\guzzlehttp\promises\src\Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+ 7 VENDORPATH\guzzlehttp\promises\src\Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+ 8 VENDORPATH\guzzlehttp\promises\src\Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+ 9 VENDORPATH\guzzlehttp\promises\src\Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+10 VENDORPATH\guzzlehttp\guzzle\src\Client.php(189): GuzzleHttp\Promise\Promise->wait()
+11 VENDORPATH\guzzlehttp\guzzle\src\ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://api.ringba.com/v2/RAaf74a45d14124eecb6fbbe591191c6e6/calllogs', [...])
+12 APPPATH\Controllers\CallReport.php(39): GuzzleHttp\Client->get('https://api.ringba.com/v2/RAaf74a45d14124eecb6fbbe591191c6e6/calllogs', [...])
+13 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+15 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 10:52:46 --> ErrorException: Attempt to read property "data" on string
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 57.
+ 1 APPPATH\Controllers\CallReport.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "data" on string', 'C:\\xampp\\htdocs\\call_reporting\\app\\Controllers\\CallReport.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-02-19 10:57:05 --> Fetch Error: Client error: `GET https://api.ringba.com/v2/RAaf74a45d14124eecb6fbbe591191c6e6/calls?startDate=2026-02-18T00%3A00%3A00Z&endDate=2026-02-19T23%3A59%3A59Z` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The resource cannot be found.</title>
+        <meta name="viewport" (truncated...)
+
+ERROR - 2026-02-19 10:57:56 --> Fetch Error: Client error: `GET https://api.ringba.com/v2/RAaf74a45d14124eecb6fbbe591191c6e6/calls?startDate=2026-02-18T00%3A00%3A00Z&endDate=2026-02-19T23%3A59%3A59Z` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The resource cannot be found.</title>
+        <meta name="viewport" (truncated...)
+
+ERROR - 2026-02-19 10:58:48 --> Fetch Error: Client error: `GET https://api.ringba.com/v2/RAaf74a45d14124eecb6fbbe591191c6e6/calllogs?startDate=2026-02-18T00%3A00%3A00Z&endDate=2026-02-19T23%3A59%3A59Z` resulted in a `405 Method Not Allowed` response:
+{"message":"The requested resource does not support http method 'GET'."}
+
+CRITICAL - 2026-02-19 11:14:21 --> Error: Undefined constant "App\Controllers\records"
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-02-19 11:16:56 --> Fetch Error: Undefined property: stdClass::$callId
+ERROR - 2026-02-19 11:17:09 --> Fetch Error: Undefined property: stdClass::$callId
+ERROR - 2026-02-19 11:19:46 --> Fetch Error: Undefined property: stdClass::$callId
+CRITICAL - 2026-02-19 11:20:15 --> ErrorException: Cannot use try without catch or finally
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 125.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-02-19 11:20:32 --> ErrorException: Cannot use try without catch or finally
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 125.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2026-02-19 11:22:29 --> Fetch Error: Undefined property: stdClass::$callId
+ERROR - 2026-02-19 11:22:39 --> Fetch Error: Undefined property: stdClass::$callId
+ERROR - 2026-02-19 11:24:42 --> Fetch Error: Undefined property: stdClass::$callId
+ERROR - 2026-02-19 11:24:55 --> Fetch Error: Undefined property: stdClass::$callId
+ERROR - 2026-02-19 11:29:03 --> Fetch Error: Client error: `POST https://api.openai.com/v1/audio/transcriptions` resulted in a `401 Unauthorized` response:
+{
+    "error": {
+        "message": "You didn't provide an API key. You need to provide your API key in an Authorization (truncated...)
+
+ERROR - 2026-02-19 11:36:21 --> Fetch Error: file_get_contents(https://media.ringba.com/recording-public?v=v1&amp;k=A9l%2f75Atg09j6OH4d47jsshy%2brpzNlWEwE6KOYhludLAfdjEWvDvZkSHVyWBALGErrgGx1qOxpQVO%2fq6JTT9Ggz7gtxNsN%2b7Tw19%2bAht0IdhZefS2gheSTwH1rCarab0XVEuv%2foMCRX8h0QIPEH58zymcMwhFsUuR1EIttV5ILpAi%2fY5DuS4EGDbYoUFHDz8ncu%2bTRgIseADR%2b0JdFaJqYRMLyX%2b3t%2bmlSRRP%2fWm68Jo0IqOT%2bcJ%2b2FKZrU2oBkUNlwxlfPsV%2blLW0F2c6W%2baIMEojU%3d): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+
+ERROR - 2026-02-19 11:39:33 --> Fetch Error: file_get_contents(https://media.ringba.com/recording-public?v=v1&amp;k=A9l%2f75Atg09j6OH4d47jsshy%2brpzNlWEwE6KOYhludLAfdjEWvDvZkSHVyWBALGErrgGx1qOxpQVO%2fq6JTT9Ggz7gtxNsN%2b7Tw19%2bAht0IdhZefS2gheSTwH1rCarab0XVEuv%2foMCRX8h0QIPEH58zymcMwhFsUuR1EIttV5ILpAi%2fY5DuS4EGDbYoUFHDz8ncu%2bTRgIseADR%2b0JdFaJqYRMLyX%2b3t%2bmlSRRP%2fWm68Jo0IqOT%2bcJ%2b2FKZrU2oBkUNlwxlfPsV%2blLW0F2c6W%2baIMEojU%3d): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+
+CRITICAL - 2026-02-19 11:43:16 --> Error: Call to undefined function App\Controllers\downloadAudioFile()
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 173.
+ 1 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 11:43:28 --> Error: Call to undefined function App\Controllers\downloadAudioFile()
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 173.
+ 1 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 11:43:43 --> Error: Call to undefined function App\Controllers\downloadAudioFile()
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 173.
+ 1 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 11:44:34 --> Error: Call to undefined function App\Controllers\downloadAudioFile()
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 174.
+ 1 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 11:44:51 --> Error: Call to undefined function App\Controllers\downloadAudioFile()
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 174.
+ 1 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 11:46:45 --> Error: Call to undefined function App\Controllers\downloadAudioFile()
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 174.
+ 1 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 11:47:59 --> Error: Call to undefined function App\Controllers\downloadAudioFile()
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 174.
+ 1 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 11:56:48 --> Error: Call to undefined function App\Controllers\downloadAudioFile()
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 154.
+ 1 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-19 11:56:58 --> Error: Call to undefined function App\Controllers\downloadAudioFile()
+[Method: GET, Route: callreport/fetchRingbaCalls]
+in APPPATH\Controllers\CallReport.php on line 154.
+ 1 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\CallReport->fetchRingbaCalls()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CallReport))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-02-19 12:05:22 --> Fetch Error: Client error: `POST https://api.openai.com/v1/audio/transcriptions` resulted in a `401 Unauthorized` response:
+{
+    "error": {
+        "message": "You didn't provide an API key. You need to provide your API key in an Authorization (truncated...)
+
+ERROR - 2026-02-19 12:16:44 --> Fetch Error: Client error: `POST https://api.openai.com/v1/audio/transcriptions` resulted in a `429 Too Many Requests` response:
+{
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For mo (truncated...)
+
+ERROR - 2026-02-19 12:22:29 --> Fetch Error: Client error: `POST https://api.openai.com/v1/audio/transcriptions` resulted in a `401 Unauthorized` response:
+{
+    "error": {
+        "message": "You didn't provide an API key. You need to provide your API key in an Authorization (truncated...)
+
+ERROR - 2026-02-19 12:30:29 --> Fetch Error: Client error: `POST https://api.openai.com/v1/audio/transcriptions` resulted in a `429 Too Many Requests` response:
+{
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For mo (truncated...)
+
+ERROR - 2026-02-19 12:30:43 --> Fetch Error: Client error: `POST https://api.openai.com/v1/audio/transcriptions` resulted in a `429 Too Many Requests` response:
+{
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For mo (truncated...)
+
+ERROR - 2026-02-19 12:30:44 --> Fetch Error: Client error: `POST https://api.ringba.com/v2/RAaf74a45d14124eecb6fbbe591191c6e6/calllogs` resulted in a `401 Unauthorized` response:
+{"message":"Authorization has been denied for this request."}
+
+ERROR - 2026-02-19 12:31:04 --> Fetch Error: Client error: `POST https://api.openai.com/v1/audio/transcriptions` resulted in a `401 Unauthorized` response:
+{
+    "error": {
+        "message": "You didn't provide an API key. You need to provide your API key in an Authorization (truncated...)
+
+ERROR - 2026-02-19 12:39:38 --> Fetch Error: Client error: `POST https://api.openai.com/v1/audio/transcriptions` resulted in a `429 Too Many Requests` response:
+{
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For mo (truncated...)
+
